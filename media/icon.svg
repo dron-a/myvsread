@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" fill="#007acc"/>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- File outline -->
+  <path d="M16 12 h20 l12 12 v28 a4 4 0 0 1 -4 4 h-28 a4 4 0 0 1 -4 -4 v-36 a4 4 0 0 1 4 -4 z"
+        stroke="#c9d1d9" stroke-width="2" fill="none"/>
+  <!-- Fold -->
+  <path d="M36 12 v12 h12" stroke="#c9d1d9" stroke-width="2" fill="none"/>
+  <!-- Lock -->
+  <rect x="28" y="36" width="12" height="10" rx="2"
+        stroke="#58a6ff" stroke-width="2" fill="none"/>
+  <path d="M30 36 v-3 a4 4 0 0 1 8 0 v3"
+        stroke="#58a6ff" stroke-width="2" fill="none"/>
 </svg>

@@ -13,7 +13,8 @@
   "activationEvents": [
     "onCommand:myvsread.encryptFile",
     "onCommand:myvsread.decryptFile",
-    "onView:myvsread.sidePanel"
+    "onView:myvsread.sidePanel",
+    "onCommand:myvsread.showSidePanel"
   ],
   "contributes": {
     "commands": [
@@ -24,6 +25,10 @@
       {
         "command": "myvsread.decryptFile",
         "title": "MyVsRead: Decrypt Current File"
+      },
+      {
+        "command": "myvsread.showSidePanel",
+        "title": "MyVsRead: Show Side Panel"
       }
     ],
     "viewsContainers": {
