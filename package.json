@@ -1,7 +1,7 @@
 {
   "name": "myvsread",
   "displayName": "MyVsRead",
-  "publisher": "your-publisher-name",
+  "publisher": "drona-bit",
   "description": "an extension to read your files LOL",
   "version": "0.0.1",
   "icon": "media/icon.svg",
