@@ -10,6 +10,11 @@
     "Other"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:myvsread.encryptFile",
+    "onCommand:myvsread.decryptFile",
+    "onView:myvsread.sidePanel"
+  ],
   "contributes": {
     "commands": [
       {
@@ -20,12 +25,26 @@
         "command": "myvsread.decryptFile",
         "title": "MyVsRead: Decrypt Current File"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "myvsread-sidebar",
+          "title": "MyVSRead",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "myvsread-sidebar": [
+        {
+          "id": "myvsread.sidePanel",
+          "name": "Side Panel",
+          "type": "webview"
+        }
+      ]
+    }
   },
-"activationEvents": [
-  "onCommand:myvsread.encryptFile",
-  "onCommand:myvsread.decryptFile"
-  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
