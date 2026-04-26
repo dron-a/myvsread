@@ -1,71 +1,74 @@
-# myvsread README
+# MyVsRead for VS Code
 
-This is the README for your extension "myvsread". After writing up a brief description, we recommend including the following sections.
+![MyVsRead Icon](media/icon.svg)
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+A simple and secure way to encrypt and decrypt files directly within your editor. `MyVsRead` provides a dedicated side panel and integrated commands to manage a secret "seed" for protecting your sensitive file content.
 
 ---
 
-## Following extension guidelines
+## ✨ Features
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+MyVsRead is designed to be lightweight and intuitive, keeping your workflow fast and secure.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+*   **Dedicated Side Panel:** A dedicated icon in the Activity Bar opens the `MyVsRead` panel to manage your seed.
+*   **Secure Seed Management:**
+    *   Set a secret seed for your current session.
+    *   A **Set Seed** button to deliberately confirm your new seed.
+    *   A **Reset Seed** button to securely clear the current seed.
+    *   A **Show/Hide** toggle (👁️/🙈) to safely view the seed you are typing.
+*   **Persistent State:** Your seed is securely saved and reloaded whenever you open VS Code. No need to re-enter it every time!
+*   **Integrated Commands:**
+    *   `MyVsRead: Encrypt Current File`
+    *   `MyVsRead: Decrypt Current File`
+*   **Smart Dialog Fallback:** If you run a command without a seed set, a dialog box will prompt you for one, ensuring you're never blocked.
+*   **Status Bar Indicator:** A subtle `$(key) Seed Set` item appears in your status bar, giving you an at-a-glance confirmation that a seed is active. Clicking it opens the side panel!
 
-## Working with Markdown
+## 🚀 Getting Started
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+It's easy to get started with MyVsRead.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+### 1. Open the MyVsRead Side Panel
 
-## For more information
+Click on the **MyVsRead icon** in the Activity Bar (the far left bar) to open the control panel.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+![MyVsRead Icon](media/icon.svg)
+
+### 2. Set Your Seed
+
+In the side panel, you have two options:
+*   **Enter a new seed:** Type your secret seed into the input box and click the **Set Seed** button. You will see a confirmation and the status bar will update.
+*   **Reset the seed:** Click the **Reset Seed** button to clear the currently active seed.
+
+![MyVsRead Side Panel](httpss://raw.githubusercontent.com/dron-adhikari/my-vs-read/master/myvsread-side-panel.png)
+> **Note:** The input box will revert to the last saved seed if you type something but don't click "Set Seed" and then close the panel. This prevents accidental changes.
+
+### 3. Use the Commands
+
+Once a seed is set, open any file you wish to encrypt or decrypt.
+
+*   Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `Cmd+Shift+P` on Mac).
+*   Type and select either `MyVsRead: Encrypt Current File` or `MyVsRead: Decrypt Current File`.
+*   The action will be performed using the seed you've set.
+
+![MyVsRead Command Palette](httpss://raw.githubusercontent.com/dron-adhikari/my-vs-read/master/myvsread-command-palette.png)
+> **Tip:** If you run a command without a seed, a dialog box will pop up, allowing you to enter a seed for that operation. This new seed will then become the active seed for your session.
+
+## Extension Commands
+
+*   `MyVsRead: Encrypt Current File`: Encrypts the content of the currently active editor.
+*   `MyVsRead: Decrypt Current File`: Decrypts the content of the currently active editor.
+*   `MyVsRead: Show Side Panel`: Opens the MyVsRead side panel. (This is also triggered by clicking the status bar item).
+
+## Release Notes
+
+### 1.0.0
+
+Initial release of MyVsRead.
+*   Added side panel for seed management.
+*   Implemented Encrypt/Decrypt commands.
+*   Added status bar indicator.
+*   Seed now persists between sessions.
+
+---
 
 **Enjoy!**
