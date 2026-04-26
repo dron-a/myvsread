@@ -4,7 +4,7 @@
   "publisher": "drona-bit",
   "description": "an extension to read your files LOL",
   "version": "0.0.1",
-  "icon": "media/icon.svg",
+  "icon": "media/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/dron-a/myvsread.git"

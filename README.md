@@ -1,6 +1,6 @@
 # MyVsRead for VS Code
 
-![MyVsRead Icon](media/icon.svg)
+![MyVsRead Icon](media/icon.png)
 
 A simple and secure way to encrypt and decrypt files directly within your editor. `MyVsRead` provides a dedicated side panel and integrated commands to manage a secret "seed" for protecting your sensitive file content.
 
@@ -31,7 +31,7 @@ It's easy to get started with MyVsRead.
 
 Click on the **MyVsRead icon** in the Activity Bar (the far left bar) to open the control panel.
 
-![MyVsRead Icon](media/icon.svg)
+![MyVsRead Icon](media/icon.png)
 
 ### 2. Set Your Seed
 
@@ -39,7 +39,7 @@ In the side panel, you have two options:
 *   **Enter a new seed:** Type your secret seed into the input box and click the **Set Seed** button. You will see a confirmation and the status bar will update.
 *   **Reset the seed:** Click the **Reset Seed** button to clear the currently active seed.
 
-![MyVsRead Side Panel](httpss://raw.githubusercontent.com/dron-adhikari/my-vs-read/master/myvsread-side-panel.png)
+![MyVsRead Side Panel](https://raw.githubusercontent.com/dron-a/myvsread/master/media/myvsread-side-panel.png)
 > **Note:** The input box will revert to the last saved seed if you type something but don't click "Set Seed" and then close the panel. This prevents accidental changes.
 
 ### 3. Use the Commands
@@ -50,7 +50,7 @@ Once a seed is set, open any file you wish to encrypt or decrypt.
 *   Type and select either `MyVsRead: Encrypt Current File` or `MyVsRead: Decrypt Current File`.
 *   The action will be performed using the seed you've set.
 
-![MyVsRead Command Palette](httpss://raw.githubusercontent.com/dron-adhikari/my-vs-read/master/myvsread-command-palette.png)
+![MyVsRead Command Palette](https://raw.githubusercontent.com/dron-a/myvsread/master/media/myvsread-command-palette.png)
 > **Tip:** If you run a command without a seed, a dialog box will pop up, allowing you to enter a seed for that operation. This new seed will then become the active seed for your session.
 
 ## Extension Commands
