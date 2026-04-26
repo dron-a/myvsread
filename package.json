@@ -1,8 +1,14 @@
 {
   "name": "myvsread",
   "displayName": "MyVsRead",
+  "publisher": "your-publisher-name",
   "description": "an extension to read your files LOL",
   "version": "0.0.1",
+  "icon": "media/icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/myvsread.git"
+  },
   "engines": {
     "vscode": "^1.116.0"
   },
