@@ -7,7 +7,7 @@
   "icon": "media/icon.svg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/myvsread.git"
+    "url": "https://github.com/dron-a/myvsread.git"
   },
   "engines": {
     "vscode": "^1.116.0"
